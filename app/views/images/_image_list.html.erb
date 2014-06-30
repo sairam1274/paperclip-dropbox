@@ -1,0 +1,7 @@
+<% if @images %>
+    <% @images.each do |image| %>
+        <li style="list-style: none">
+          <%= image_tag image.file.url(:medium)%>
+        </li>
+    <%end%>
+<%end%>
