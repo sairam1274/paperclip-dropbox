@@ -8,3 +8,5 @@ class Image < ActiveRecord::Base
                     }
   validates_attachment :file, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
 end
+
+
